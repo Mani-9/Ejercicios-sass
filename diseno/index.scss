@@ -1,0 +1,122 @@
+$color-primario: #0c0c0c; // Negro
+$color-secundario: #bbc7dc; // Gris claro
+$fuente-base: "Arial", sans-serif;
+$centrar-titulo: center;
+$nav-size: 30px;
+$nav-color: #f0cd97; 
+$nav-right: 500px;
+$nav-left: 500px;
+
+// Variables adicionales
+$nav-color-medium: lighten($nav-color, 10%); // Aclarar el color de fondo en un 10%
+$nav-color-small: darken($nav-color, 10%); // Oscurecer el color de fondo en un 10%
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    font-family: $fuente-base;
+    background-color: $color-secundario;
+
+    h1, p {
+        text-align: $centrar-titulo;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-optical-sizing: auto;
+    }
+}
+
+nav {
+    text-align: $centrar-titulo;
+    background-color: $nav-color;
+    padding: $nav-size;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 10px;
+    border-radius: 40px;
+    margin-left: $nav-left;
+    margin-right: $nav-right;
+
+    a {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        color: $color-primario;
+        text-decoration: none;
+    }
+
+    // Media queries for responsiveness
+    @media (max-width: 1200px) {
+        background-color: $nav-color-medium; // Usar el color aclarado para pantallas medianas
+        grid-template-columns: repeat(4, auto); // Reduce columns to 4
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    @media (max-width: 800px) {
+        background-color: $nav-color-small; // Usar el color oscurecido para pantallas pequeñas
+        grid-template-columns: repeat(2, auto); // Reduce columns to 2
+        padding: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    @media (max-width: 500px) {
+        background-color: $nav-color-small; // Mantener el mismo color para pantallas muy pequeñas
+        grid-template-columns: 1fr; // Single column layout
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.variables {
+    h2 {
+        text-align: $centrar-titulo;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-optical-sizing: auto;
+    }
+    div {
+        background-color: $color-primario;
+        color: $color-secundario;
+        padding: 20px;
+        font-family: $fuente-base;
+        text-align: $centrar-titulo;
+    }
+}
+
+.operadores {
+    h2 {
+        text-align: $centrar-titulo;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-optical-sizing: auto;
+    }
+    div {
+        height: $nav-size * 2; 
+        margin: 10px / 2; 
+        background-color: lighten($color-primario, 20%); // Aclarar el color primario en un 20%
+        color: darken($color-secundario, 20%); // Oscurecer el color secundario en un 20%
+        padding: 10px + 5px; // 15px
+        font-size: calc(1rem + 0.5vw); // Valor relativo basado en el ancho de la pantalla
+        overflow: hidden; // Recortar cualquier contenido que se salga del div
+    }
+}
+.tipos-de-datos {
+    h2 {
+        text-align: $centrar-titulo;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-optical-sizing: auto;
+    }
+    div {
+        $font-size: 16px;
+        $line-height: 1.5;
+        $margin: 10px 20px;
+        $border: 1px solid $color-primario;
+        
+        font-size: $font-size;
+        line-height: $line-height;
+        margin: $margin;
+        border: $border;
+        background-color: adjust-hue($nav-color, 225deg); // Ajustar el tono del color de fondo
+        color: $color-primario;
+        padding: $nav-size / 2;
+    }
+}
