@@ -6,13 +6,7 @@ $nav-size: 30px;
 $nav-color: #f0cd97; 
 $nav-right: 500px;
 $nav-left: 500px;
-
-// Variables adicionales
-$nav-color-medium: lighten($nav-color, 10%); // Aclarar el color de fondo en un 10%
-$nav-color-small: darken($nav-color, 10%); // Oscurecer el color de fondo en un 10%
-
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
 body {
     font-family: $fuente-base;
     background-color: $color-secundario;
@@ -29,7 +23,7 @@ nav {
     background-color: $nav-color;
     padding: $nav-size;
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(6, calc());
     gap: 10px;
     border-radius: 40px;
     margin-left: $nav-left;

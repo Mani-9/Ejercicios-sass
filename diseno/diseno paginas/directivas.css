@@ -1,1 +1,31 @@
-/*# sourceMappingURL=directivas.css.map */
+body {
+  text-align: center;
+}
+
+.boton-primario, .boton-succes {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 25px;
+  margin: 25px;
+  background-color: blue;
+  color: white;
+}
+
+.boton-secundario {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 25px;
+  margin: 25px;
+  background-color: gray;
+  color: black;
+}
+
+.boton-succes {
+  background-color: green;
+}/*# sourceMappingURL=directivas.css.map */

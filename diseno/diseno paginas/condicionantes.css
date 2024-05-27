@@ -1,1 +1,13 @@
-/*# sourceMappingURL=condicionantes.css.map */
+.caja {
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  background-color: lightblue;
+  width: 300px;
+  height: 300px;
+}
+
+body {
+  text-align: center;
+}/*# sourceMappingURL=condicionantes.css.map */

@@ -1,1 +1,12 @@
-/*# sourceMappingURL=funciones.css.map */
+body {
+  text-align: center;
+}
+
+.Directivas {
+  width: 250px;
+}
+
+.Directivas {
+  background: linear-gradient(to right, #ff0000, #00ff00);
+  margin-left: 825px;
+}/*# sourceMappingURL=funciones.css.map */

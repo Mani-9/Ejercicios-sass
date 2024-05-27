@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"condicionantes.css"}
+{"version":3,"sources":["condicionantes.scss","condicionantes.css"],"names":[],"mappings":"AAEA;EACE,sBAAA;EACA,aAAA;EACA,YAAA;EACA,kBAAA;EAGE,2BAAA;EACA,YAAA;EACA,aAAA;ACHJ;;ADkBA;EACE,kBAAA;ACfF","file":"condicionantes.css"}

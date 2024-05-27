@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+}
+@mixin boton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 25px;
+    margin: 25px;
+  }
+  
+  .boton-primario {
+    @include boton;
+    background-color: blue;
+    color: white;
+  }
+  
+  .boton-secundario {
+    @include boton;
+    background-color: gray;
+    color: black;
+  }
+  
+  // Extendemos el estilo del botón primario para un botón de éxito
+  .boton-succes {
+    @extend .boton-primario;
+    background-color: green;
+  }
+  

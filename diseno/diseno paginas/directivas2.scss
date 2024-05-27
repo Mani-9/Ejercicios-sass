@@ -1,0 +1,26 @@
+@for $i from 1 through 5 {
+    .item-#{$i} {
+      font-size: 10px * $i;
+    }
+  }
+  
+  $colors: red, green, blue;
+  @each $color in $colors {
+    .#{$color}-text {
+      color: $color;
+    }
+  }
+  
+  $i: 6;
+@while $i > 0 {
+  .while-#{$i} {
+    width: 10px * $i;
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+  $i: $i - 1;
+}
+
+  body{
+    text-align: center;
+}
